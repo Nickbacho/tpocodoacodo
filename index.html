@@ -4,8 +4,8 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="normalize.css" />
+    <link rel="stylesheet" href="stylessInicio.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link
       rel="shortcut icon"
       href="/favicon/icons8-codificación-para-computadora-portátil-64.png"
@@ -15,35 +15,40 @@
   </head>
   <body>
     <header>
-      <h1>Learn Developer Front-End</h1>
-      <img src="/img/¿Que-es-un-framework-en-programacion-scaled-1200x675.jpg"alt="{}"/>
+      <h1 class="tituloBootcamp">Learn Developer Front-End</h1>
+      <div class="container">
+         <img class="imageninicio" src="img/james-harrison-vpOeXr5wmR4-unsplash.jpg" class="d-block w-100" alt="...">
+      </div>
+            
     </header>
-    <main>
-      <nav>
-        <a href="/html.html" target="_blank">Html</a>
-        <a href="/css.html" target="_blank">Css</a>
-        <a href="/javascript.html" target="_blank">JavaScript</a>
-      </nav>
-    </main>
-    
-    <section>
-      <article>
-      <h2>Este Bootcamp de programación es para vos.</h2>
-      <h3>
-        Es completamente gratis!!
-        <br />
-        No se requiere ningún conocimiento previo!!
-      </h3>
-      </article>
-    </section>
-    <footer>
-      <h4>Contactanos por nuestros diferentes medios</h4>
-      <a href="mailto:example@gmail.com">
-        <h6>Envianos un correo </h6></a>
-      <br>
-      <a href="https://https://web.whatsapp.com/+54901122334455" target="_blank"> 
-        <h6>WhatsApp : 011 22334455</h6>
-      </a>
+    <div class="links">      
+        <a  href="/html.html"><img class="logo" src="favicon/html.png" alt=""></a>
+        <a  href="/css.html" ><img class="logo" src="favicon/css-3.png" alt=""></a>
+        <a  href="/javascript.html"><img class="logo" src="favicon/js.png" alt=""></a>      
+    </div>
+    <div class="caracteristicas container">
+      <h2>Este Bootcamp de programación es para vos!!</h2>
+      <p>
+        En este Bootcamp podras aprender el uso de diferentes tecnologias para iniciarte en el mundo de la programacion y poder desarrollar paginas adaptativas con:
+         <ul>
+          <li>HTML</li>
+          <li>Css</li>
+          <li>Java Script</li>
+         </ul> 
+         a tu ritmo y lo mas importante! Completamente gratis y no necesitas ningun conocimiento previo!!
+         <br>
+
+
+      </p>
+    </div>
+    <footer class="footer">      
+      <ul class="menu">
+        <li class="menu__item"><a class="menu__link" href="#">Mail</a></li>
+        <li class="menu__item"><a class="menu__link" href="#">Quienes Somos</a></li>
+        <li class="menu__item"><a class="menu__link" href="contacto.html">Contacto</a></li>
+        <li class="menu__item"><a class="menu__link" href="index.html">Inicio</a></li>
+      </ul>
+      <p>&copy;2023 CaC Team 11 | Derechos Reservados</p>
     </footer>
-  </body>
-</html>
+  </body>    
+  </html>
