@@ -1,6 +1,32 @@
 body{
   font-family: Georgia, 'Times New Roman', Times, serif;
 }
+
+.titulo{
+  text-align: center;
+  font-weight: bold;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  color: dimgrey;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.logo{
+  width: 5%;
+}
+
+.intro{
+  background-color: #A3A5AE;
+  padding: 2rem;
+  margin: 2rem;
+  border: 10px solid lightgrey;
+}
+
+.recursos{
+  padding: 2rem;
+  margin: 2rem;
+}
+
 .menu {
   display: flex;
   margin: 10px 0;
