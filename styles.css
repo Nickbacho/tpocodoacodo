@@ -1,3 +1,7 @@
+*{
+  padding-top: 0.5rem;
+}
+
 body {
   font-family: Georgia, 'Times New Roman', Times, serif;
 }
@@ -100,7 +104,16 @@ a {
   height: 40px;
 }
 
+.logo:hover{
+  transform: scale(2)
+} 
+
 /* HTML - CSS - JS */
+
+.logo-min{
+  width: 40px;
+  height: 40px;
+}
 
 .intro {
   background-color: #A3A5AE;
@@ -114,11 +127,19 @@ a {
   margin: 2rem;
 }
 
+.recursos a{
+  color: black;
+}
+
 .videos {
   display: flex;
   flex-wrap: wrap;
   gap: 2rem;
   justify-content: center;
+}
+
+.videos iframe{
+  box-shadow: 10px 10px 5px;
 }
 
 .curso{
@@ -182,12 +203,20 @@ a {
     width: 350px;
     height: 225px;
   }
+  .escribinos{
+    padding-left: 10px;
+    padding-right: 10px;
+  }
 }
 
 @media (max-width:860px) {
   .videos iframe {
     width: 300px;
     height: 175px;
+  }
+  .escribinos{
+    padding-left: 20px;
+    padding-right: 20px;
   }
 }
 
