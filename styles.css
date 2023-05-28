@@ -13,6 +13,8 @@ body {
 
 .menu__item {
   list-style: none;
+  display: flex;
+  align-items: center;
 }
 
 .menu__link {
@@ -123,6 +125,7 @@ a {
 }
 
 .recursos {
+  display: grid;
   padding: 2rem;
   margin: 2rem;
 }
@@ -248,8 +251,9 @@ a {
 
 @media (max-width:360px) {
   .recursos{
-    margin: 0;
-    padding: 0;
+    margin: 0.2rem;
+    padding: 0.2rem;
+    padding-top: 1rem;
   }
   .recursos-link{
     font-size: xx-small;
