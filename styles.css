@@ -247,6 +247,10 @@ a {
 }
 
 @media (max-width:360px) {
+  .recursos{
+    margin: 0;
+    padding: 0;
+  }
   .recursos-link{
     font-size: xx-small;
   }
