@@ -1,130 +1,131 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="normalize.css" />
-    <link
-      rel="shortcut icon"
-      href="/favicon/icons8-javascript.gif"
-      type="image/x-icon"
-    />
-    <title>JavaScript</title>
-  </head>
-    <div class="container" id="divcontenedorjs">
-      <header>
-        <h1>Javascript I</h1>
-        <h3>
-          En esta sección de nuestro BootCamp vas a aprender a utilizar el
-          lenguaje de programación mas usado en el mundo del Desarrollo Web
-        </h3>
-      </header>
-      <main>
-        <h3>
-            ¿Porque Javascript es el lenguaje de programación mas usado en el
-            Desarrollo Front-End?</h3>
-          <br/>
-          <h4>Las razones son varias, pero la mas importante es porque se ejecuta
-          directamente en el navegador y además con JS podemos manipular
-          facilmente el DOM (Document Object Model). 
-        </h4>
-        <h5>Empecemos con lo básico de este lenguaje tan versatil</h5>
-        <article>
-          <section>
-            <h3><u>Variables</u></h3>
-            <p>Hay 4 formas de declarar las variables en JavaScript</p>
-            <ul>
-              <li>Con la palabra reservada var: var name = 'John';</li>
-              <li>Con la palabra reservada let: let name = 'john';</li>
-              <li>Con la palabra reservada const: const PI = 3,14;</li>
-              <li>Sin ninguna palabra reservada: name = 'John';</li>
-            </ul>
-            <p>Algunas aclaraciones respecto a las variables. 
-              Es una mala práctica declarar las variables sin usar una palabra reservada.
-              Desde ECMAScript 6 se recomienda utilizar let en ves de var. La
-              palabra const en realidad no es una variable sino una constante.
-              En resumen, cuando declares variables utiliza let, y utiliza const para valores que no van a cambiar.
-            </p>
-          </section> <hr>
-          <section>
-            <h3><u>Operadores</u></h3>
-            <h5>
-              Para abordar esta sección es importante destacar que tenemos
-              diferentes clases de operadores.</h5> 
-              <h4><em>Operadores aritméticos</em></h4>
-              <br/>
-             <p>Los utilizamos para realizar operaciones
-              matemáticas básicas.
-              a + b Suma el valor de a al valor de b.
-              a - b Resta el valor de b al valor de a. 
-              a * b Multiplica el valor de a por el valor de b. 
-              a / b Divide el valor de a entre el valor de b. 
-              Este operador se llama Módulo a % b y devuelve el
-              resto de la división de a entre b. 
-              Este operador es la Exponenciación A ** B y eleva A a
-              la potencia de B.
-            </p>
-            <br>
-            <h4>Operadores de asignación</h4>
-              <p>Estos operadores nos
-                permiten asignar información a diferentes constantes o variables a
-                través del símbolo =.
-                Asignación c = a + b Asigna el valor de la parte derecha (en este
-            ejemplo, una suma) a c. Suma y asignación a += b Es equivalente a a
-            = a + b. Resta y asignación a -= b Es equivalente a a = a - b.
-            Multiplicación y asignación a *= b Es equivalente a a = a * b.
-            División y asignación a /= b Es equivalente a a = a / b. Módulo y
-            asignación a %= b Es equivalente a a = a % b. Exponenciación y
-            asignación a **= b Es equivalente a a = a ** b.
-            </p> 
-            <br>
-            <h4><em>Operadores de comparación</em></h4> 
-              <p>Los operadores de comparación son aquellos que utilizamos para realizar comprobaciones. Estas expresiones de
-              comparación devuelven un booleano con un valor de true o false 
-               Operador de igualdad a == b. Comprueba si el valor de a es igual al de b. 
-              Operador de desigualdad a != b Comprueba si el valor de a no es igual al de b.
-              Operador mayor a > b Comprueba si el valor de
-              a es mayor que el de b. 
-              Operador menor que a < b Comprueba si el valor de a es menor que el de b.
-              Operador de igualdad estricta a === b Comprueba si el valor y ademas el tipo de dato de a es igual al de b.
-              Operador no idéntico a !== b Comprueba si el valor y el tipo
-              de dato de a no es igual al de b.
-            </p> 
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="shortcut icon" href="/favicon/icons8-javascript.gif" type="image/x-icon" />
+  <title>JavaScript</title>
+</head>
+
+<body class="js">
+  <header>
+    <h1>Javascript I</h1>
+    <h3>
+      En esta sección de nuestro BootCamp vas a aprender a utilizar el
+      lenguaje de programación mas usado en el mundo del Desarrollo Web
+    </h3>
+  </header>
+  <main >
+
+    <h3>
+      ¿Porque Javascript es el lenguaje de programación mas usado en el
+      Desarrollo Front-End?</h3>
+    <br />
+    <h4>Las razones son varias, pero la mas importante es porque se ejecuta
+      directamente en el navegador y además con JS podemos manipular
+      facilmente el DOM (Document Object Model).
+    </h4>
+    <h5>Empecemos con lo básico de este lenguaje tan versatil</h5>
+    <article>
+      <section>
+        <h3><u>Variables</u></h3>
+        <p>Hay 4 formas de declarar las variables en JavaScript</p>
+        <ul>
+          <li>Con la palabra reservada var: var name = 'John';</li>
+          <li>Con la palabra reservada let: let name = 'john';</li>
+          <li>Con la palabra reservada const: const PI = 3,14;</li>
+          <li>Sin ninguna palabra reservada: name = 'John';</li>
+        </ul>
+        <p>Algunas aclaraciones respecto a las variables.
+          Es una mala práctica declarar las variables sin usar una palabra reservada.
+          Desde ECMAScript 6 se recomienda utilizar let en ves de var. La
+          palabra const en realidad no es una variable sino una constante.
+          En resumen, cuando declares variables utiliza let, y utiliza const para valores que no van a cambiar.
+        </p>
+      </section>
+      <hr>
+      <section>
+        <h3><u>Operadores</u></h3>
+        <h5>
+          Para abordar esta sección es importante destacar que tenemos
+          diferentes clases de operadores.</h5>
+        <h4><em>Operadores aritméticos</em></h4>
+        <br />
+        <p>Los utilizamos para realizar operaciones
+          matemáticas básicas.
+          a + b Suma el valor de a al valor de b.
+          a - b Resta el valor de b al valor de a.
+          a * b Multiplica el valor de a por el valor de b.
+          a / b Divide el valor de a entre el valor de b.
+          Este operador se llama Módulo a % b y devuelve el
+          resto de la división de a entre b.
+          Este operador es la Exponenciación A ** B y eleva A a
+          la potencia de B.
+        </p>
+        <br>
+        <h4>Operadores de asignación</h4>
+        <p>Estos operadores nos
+          permiten asignar información a diferentes constantes o variables a
+          través del símbolo =.
+          Asignación c = a + b Asigna el valor de la parte derecha (en este
+          ejemplo, una suma) a c. Suma y asignación a += b Es equivalente a a
+          = a + b. Resta y asignación a -= b Es equivalente a a = a - b.
+          Multiplicación y asignación a *= b Es equivalente a a = a * b.
+          División y asignación a /= b Es equivalente a a = a / b. Módulo y
+          asignación a %= b Es equivalente a a = a % b. Exponenciación y
+          asignación a **= b Es equivalente a a = a ** b.
+        </p>
+        <br>
+        <h4><em>Operadores de comparación</em></h4>
+        <p>Los operadores de comparación son aquellos que utilizamos para realizar comprobaciones. Estas expresiones de
+          comparación devuelven un booleano con un valor de true o false
+          Operador de igualdad a == b. Comprueba si el valor de a es igual al de b.
+          Operador de desigualdad a != b Comprueba si el valor de a no es igual al de b.
+          Operador mayor a > b Comprueba si el valor de
+          a es mayor que el de b.
+          Operador menor que a < b Comprueba si el valor de a es menor que el de b. Operador de igualdad estricta a===b
+            Comprueba si el valor y ademas el tipo de dato de a es igual al de b. Operador no idéntico a !==b Comprueba
+            si el valor y el tipo de dato de a no es igual al de b. </p>
             <br>
             <h4><em>Operadores Lógicos</em></h4>
-             <ul>
-                <li> && (and) </li>
-                <li> | | (or) </li>
-                <li> ! (not) </li>
-             </ul>
-             <p>Ejemplos
-                let a = 2
-                let b = 2
-                let c = 2
-                if ( a == b && b == c) 
-                {console.log('hello world')} En este ejemplo se ejecuta el console.log porque se cumple la condición del if ya que las conciones son ciertas (true).
-                <br>
-                let a = 1
-                let b = 2
-                let c = 3    
-                if ( a == b | | b == c) 
-                {console.log('hello world')} Aquí no se ejecuta el console.log ya que aunque sea una de las condiciones debería ser true para ejecutar el codigo. 
-                <br>
-                let a = 1
-                let b = 2
-                if ( a != b)
-                { console.log('hello world')} Aquí la condición se cumple ya que a es diferente que b.                 
-             </p>
-          </section>
-        </article>
-        <section>
-          <a href="/jsfunc.html" target="_blank">
-            <p>En la siguente sección veras las funciones en JS </p>
-          </a>
-        </section>
-      </main>
-    </div>
-  </body>
+            <ul>
+              <li> && (and) </li>
+              <li> | | (or) </li>
+              <li> ! (not) </li>
+            </ul>
+            <p>Ejemplos
+              let a = 2
+              let b = 2
+              let c = 2
+              if ( a == b && b == c)
+              {console.log('hello world')} En este ejemplo se ejecuta el console.log porque se cumple la condición del
+              if
+              ya que las conciones son ciertas (true).
+              <br>
+              let a = 1
+              let b = 2
+              let c = 3
+              if ( a == b | | b == c)
+              {console.log('hello world')} Aquí no se ejecuta el console.log ya que aunque sea una de las condiciones
+              debería ser true para ejecutar el codigo.
+              <br>
+              let a = 1
+              let b = 2
+              if ( a != b)
+              { console.log('hello world')} Aquí la condición se cumple ya que a es diferente que b.
+            </p>
+      </section>
+    </article>
+    <section>
+      <a href="/jsfunc.html" target="_blank">
+        <p>En la siguente sección veras las funciones en JS </p>
+      </a>
+    </section>
+  </main>
+  </div>
+</body>
+
 </html>

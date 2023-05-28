@@ -1,85 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Javascript</title>
-  </head>
-  <body>
-    <div>
-    <main>
-      <header>
-        <h1>Javascritp II</h1>
-        <h2>Funciones</h2>
-        <h4>Las funciones son bloques de código que llevan adelante un acción. Son de gran utilidad porque nos ahorran de escribir muchas líneas de código y que podemos reutilizar en todo momento invocandolas</h4>
-      </header>
-      <article>
-        <section>
-          <h5>En JS hay varios tipos de funciones.</h5>
-          <p>Estan las funciones que se declaran con la palabra reservada       function    y un nombre.
-            Ejemplo: function multiplicación(a, b) {
-              return a * b;}
-          </p> 
-          <p>
-            Las funciones expresadas que pueden tener o no nombre.
-            Ejemplo : const x = function (a, b) {return a * b};
-            Se guardan en una variable o constante.
-          </p>
-          <p>
-            Y también tenemos las llamadas funciones "flecha" o arrow function.
-            Ejemplo: const x = (x, y) => { return x * y };
-            No se usa la palabra reservada function y no tienen nombre.
-          </p>
-        </section>
-        <section>
-          <p>Las Funciones pueden recibir parámetros que son similares a las variables, y luego esos parámetros pueden recibir argumentos expresados en valores.
-          Las funciones para que se ejecuten deben ser invocadas o llamadas.
-          </p>
-        </section>
-      </article>
-      <article>
-        <h2>Bucles (Loops)</h2>
-        <section>
-        <h4>Los bucles pueden ejecutar un bloque de código varias veces.</h4>
-      <h5>Bucle For</h5>
-      <p>
-        Un ciclo for se repite hasta que una condición especificada se evalúe como false.
-        La for instrucción crea un bucle con 3 expresiones opcionales:
-        for (let i = 0; i < 5; i++) {
-          text += "The number is " + i + "<br>";
-        }
-        Desglosango el for :
-        La expresión 1 se ejecuta (una vez) antes de la ejecución del bloque de código.
-        La expresión 2 define la condición para ejecutar el bloque de código.
-        La expresión 3 se ejecuta (todas las veces) después de que se haya ejecutado el bloque de código.
-      </p>
-        </section>
-        <section>
-          <h5>Bucle While y Do While</h5>
-          <p>El while ciclo recorre un bloque de código siempre que una condición específica sea verdadera.
-            En el siguiente ejemplo, el código del ciclo se ejecutará una y otra vez, siempre que una variable (i) sea menor que 10:
-            while (i < 10) {
-              text += "The number is " + i;
-              i++;
-            }
-          </p>
-          <p>
-            El do while bucle es una variante del bucle while. Este ciclo ejecutará el bloque de código una vez, antes de verificar si la condición es verdadera, luego repetirá el ciclo mientras la condición sea verdadera.
-            El siguiente ejemplo utiliza un do whilebucle. El bucle siempre se ejecutará al menos una vez, incluso si la condición es falsa, porque el bloque de código se ejecuta antes de que se pruebe la condición:
-            do {
-              text += "The number is " + i;
-              i++;
-            }
-            while (i < 10);
-          </p>
-        </section>
-      </article>
-      <article>
-      <a href="/jscondicionales.html" target="_blank"> <p> Continuemos en la siguiente sección con los condicionales en JS.</p></a>  
-      </article>
-    </main>
-  </div>
-  </body>
-</html>
 
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="styles.css" />
+  <title>Javascript</title>
+</head>
+
+<body class="js">
+  <header>
+    <h1>Javascritp II</h1>
+    <h2>Funciones</h2>
+    <h4>Las funciones son bloques de código que llevan adelante un acción. Son de gran utilidad porque nos ahorran de
+      escribir muchas líneas de código y que podemos reutilizar en todo momento invocandolas</h4>
+  </header>
+  <main >
+
+    <article>
+      <section>
+        <h5>En JS hay varios tipos de funciones.</h5>
+        <p>Estan las funciones que se declaran con la palabra reservada function y un nombre.
+          Ejemplo: function multiplicación(a, b) {
+          return a * b;}
+        </p>
+        <p>
+          Las funciones expresadas que pueden tener o no nombre.
+          Ejemplo : const x = function (a, b) {return a * b};
+          Se guardan en una variable o constante.
+        </p>
+        <p>
+          Y también tenemos las llamadas funciones "flecha" o arrow function.
+          Ejemplo: const x = (x, y) => { return x * y };
+          No se usa la palabra reservada function y no tienen nombre.
+        </p>
+      </section>
+      <section>
+        <p>Las Funciones pueden recibir parámetros que son similares a las variables, y luego esos parámetros pueden
+          recibir argumentos expresados en valores.
+          Las funciones para que se ejecuten deben ser invocadas o llamadas.
+        </p>
+      </section>
+    </article>
+    <article>
+      <h2>Bucles (Loops)</h2>
+      <section>
+        <h4>Los bucles pueden ejecutar un bloque de código varias veces.</h4>
+        <h5>Bucle For</h5>
+        <p>
+          Un ciclo for se repite hasta que una condición especificada se evalúe como false.
+          La for instrucción crea un bucle con 3 expresiones opcionales:
+          for (let i = 0; i < 5; i++) { text +="The number is " + i + "<br>" ; } Desglosango el for : La expresión 1 se
+            ejecuta (una vez) antes de la ejecución del bloque de código. La expresión 2 define la condición para
+            ejecutar el bloque de código. La expresión 3 se ejecuta (todas las veces) después de que se haya ejecutado
+            el bloque de código. </p>
+      </section>
+      <section>
+        <h5>Bucle While y Do While</h5>
+        <p>El while ciclo recorre un bloque de código siempre que una condición específica sea verdadera.
+          En el siguiente ejemplo, el código del ciclo se ejecutará una y otra vez, siempre que una variable (i) sea
+          menor que 10:
+          while (i < 10) { text +="The number is " + i; i++; } </p>
+            <p>
+              El do while bucle es una variante del bucle while. Este ciclo ejecutará el bloque de código una vez, antes
+              de verificar si la condición es verdadera, luego repetirá el ciclo mientras la condición sea verdadera.
+              El siguiente ejemplo utiliza un do whilebucle. El bucle siempre se ejecutará al menos una vez, incluso si
+              la condición es falsa, porque el bloque de código se ejecuta antes de que se pruebe la condición:
+              do {
+              text += "The number is " + i;
+              i++;
+              }
+              while (i < 10); </p>
+      </section>
+    </article>
+    <article>
+      <a href="/jscondicionales.html" target="_blank">
+        <p> Continuemos en la siguiente sección con los condicionales en JS.</p>
+      </a>
+    </article>
+  </main>
+</body>
+
+</html>
