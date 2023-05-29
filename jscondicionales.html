@@ -1,76 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Javascript</title>
-  </head>
-  <body>
-    <div>
-    <main>
-      <header>
-        <h1>Javascritp III</h1>
-        <h2>Condicionales</h2>
-        <h4>Muy a menudo, cuando escribe código, desea realizar diferentes acciones para diferentes decisiones.
 
-          Puede usar declaraciones condicionales en su código para hacer esto.
-          
-          En JavaScript tenemos las siguientes declaraciones condicionales:
-          
-          Úselo ifpara especificar un bloque de código que se ejecutará, si una condición especificada es verdadera
-          Se usa elsepara especificar un bloque de código a ejecutar, si la misma condición es falsa
-          Úselo else ifpara especificar una nueva condición para probar, si la primera condición es falsa</h4>
-      </header>
-      <article>
-        <section>
-          <h5>If</h5>
-          <p>Utilice la ifdeclaración para especificar un bloque de código JavaScript que se ejecutará si una condición es verdadera.
-            Ejemplo:
-            Haz un saludo de "Buenos días" si la hora es menos de las 18:00:
-            if (hour < 18) {
-            greeting = "Good day";}
-            El resultado del saludo será:
-            Good day
-            <h5>Else</h5>
-          <p>
-            Utilice la else instrucción para especificar un bloque de código que se ejecutará si la condición es falsa..
-            Ejemplo
-            Si la hora es menos de las 18, crea un saludo de "Buenos días", de lo contrario "Buenas noches":
-            
-            if (hour < 18) {
-              greeting = "Good day";
-            } else {
-              greeting = "Good evening";
-            }
-            El resultado del saludo será:
-            
-            Good day
-          </p>
-          <h5>Else If</h5>
-          <p>
-            Utilice la else ifdeclaración para especificar una nueva condición si la primera condición es falsa.
-            Ejemplo
-            Si la hora es inferior a las 10:00, cree un saludo de "Buenos días", si no, pero la hora es inferior a las 20:00, cree un saludo de "Buenos días", de lo contrario, un "Buenas noches":
-            
-            if (time < 10) {
-              greeting = "Good morning";
-            } else if (time < 20) {
-              greeting = "Good day";
-            } else {
-              greeting = "Good evening";
-            }
-            El resultado del saludo será:
-            
-            Good day
-          </p>
-        </section>
-      </article>
-      <article>
-      <a href="/index.html" target="_blank"> <p>Inicio Boot-Camp</p></a>  
-      </article>
-    </main>
-  </div>
-  </body>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="styles.css" />
+  <title>Javascript</title>
+</head>
+
+<body class="js">
+  <header>
+    <h1>Javascritp III</h1>
+    <h2>Condicionales</h2>
+    <h4>Muy a menudo, cuando escribe código, desea realizar diferentes acciones para diferentes decisiones.
+
+      Puede usar declaraciones condicionales en su código para hacer esto.
+
+      En JavaScript tenemos las siguientes declaraciones condicionales:
+
+      Úselo ifpara especificar un bloque de código que se ejecutará, si una condición especificada es verdadera
+      Se usa elsepara especificar un bloque de código a ejecutar, si la misma condición es falsa
+      Úselo else ifpara especificar una nueva condición para probar, si la primera condición es falsa</h4>
+  </header>
+
+  <main >
+    <article>
+      <section>
+        <h5>If</h5>
+        <p>Utilice la ifdeclaración para especificar un bloque de código JavaScript que se ejecutará si una condición es
+          verdadera.
+          Ejemplo:
+          Haz un saludo de "Buenos días" si la hora es menos de las 18:00:
+          if (hour < 18) { greeting="Good day" ;} El resultado del saludo será: Good day <h5>Else</h5>
+            <p>
+              Utilice la else instrucción para especificar un bloque de código que se ejecutará si la condición es
+              falsa..
+              Ejemplo
+              Si la hora es menos de las 18, crea un saludo de "Buenos días", de lo contrario "Buenas noches":
+
+              if (hour < 18) { greeting="Good day" ; } else { greeting="Good evening" ; } El resultado del saludo será:
+                Good day </p>
+                <h5>Else If</h5>
+                <p>
+                  Utilice la else ifdeclaración para especificar una nueva condición si la primera condición es falsa.
+                  Ejemplo
+                  Si la hora es inferior a las 10:00, cree un saludo de "Buenos días", si no, pero la hora es inferior a
+                  las 20:00, cree un saludo de "Buenos días", de lo contrario, un "Buenas noches":
+
+                  if (time < 10) { greeting="Good morning" ; } else if (time < 20) { greeting="Good day" ; } else {
+                    greeting="Good evening" ; } El resultado del saludo será: Good day </p>
+      </section>
+    </article>
+    <article>
+      <a href="./index.html" target="_blank">
+        <p>Inicio Boot-Camp</p>
+      </a>
+    </article>
+  </main>
+</body>
+
 </html>
-
