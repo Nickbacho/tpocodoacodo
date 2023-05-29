@@ -191,6 +191,25 @@ a {
   }
 }
 
+/* QUIENES SOMOS*/
+.fotoNuestra{
+  height: 250PX;
+  width: 250PX;
+}
+.quienessomos{
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+.descripcionQS{
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+  padding: 10px;
+  display: flex;
+  
+}
+
 
 
 
