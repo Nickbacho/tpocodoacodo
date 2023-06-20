@@ -254,18 +254,40 @@ ul {
     padding-top: 1rem;
   }
 }
+/*api*/
+#h5{
+text-align:justify;
+}
+#translate {
+  margin-left: auto;
+font-size: 15px;
+}
+
+/* index*/
+#p1{
+  text-align: justify;
+}
 
 /* QUIENES SOMOS*/
+.h1{
+  font-size: medium;
+  font-style: initial;
+  margin-left:125px;
+}
 .fotoNuestra{
+  border-radius: 25px;
+  margin-left: 5px;
   height: 250PX;
   width: 250PX;
 }
 .quienessomos{
+  margin-left: 10px;
   display: grid;
   justify-content: center;
   align-items: center;
 }
 .descripcionQS{
+  text-align: center;
   justify-content: center;
   align-items: center;
   margin: 10px;
