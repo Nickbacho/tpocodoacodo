@@ -43,6 +43,8 @@
 //         }
 //                }
 
+var translatedText
+
 function redirectToTranslate() {
   var apiKey = 'TU_CLAVE_DE_API'; // Reemplaza 'TU_CLAVE_DE_API' con tu propia clave de API
   var targetUrl = 'https://translate.google.com/#auto/es/';
@@ -55,7 +57,7 @@ function redirectToTranslate() {
     fetch(translateUrl)
       .then((response) => response.json())
       .then(data => {
-        var translatedText = data.translations;
+        translatedText = data.translations;
         targetUrl += encodedText;
 
         window.open(targetUrl, '_blank');
