@@ -210,6 +210,7 @@ ul {
 
 .js footer{
   padding: 0rem;
+  padding-bottom: 2rem;
 }
 
 /* MEDIA-QUERY */
@@ -274,9 +275,9 @@ font-size: 15px;
 
 /* QUIENES SOMOS*/
 .h1{
+  text-align: center;
   font-size: medium;
   font-style: initial;
-  margin-left:125px;
 }
 .fotoNuestra{
   border-radius: 25px;
@@ -285,11 +286,24 @@ font-size: 15px;
   width: 250PX;
 }
 .quienessomos{
+  display: inline-block;
+  width: 100%;
+  text-align: start;
+  padding: 2rem;
+/* QUIENES SOMOS
   margin-left: 10px;
   display: grid;
   justify-content: center;
-  align-items: center;
+  align-items: center;*/
 }
+
+.info {
+  margin-left: 20px;
+  width: 70%;
+  display: inline-block;
+  vertical-align: top;
+}
+
 .descripcionQS{
   text-align: center;
   justify-content: center;
