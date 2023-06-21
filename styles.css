@@ -208,6 +208,10 @@ ul {
   text-align: center;
 }
 
+.js footer{
+  padding: 0rem;
+}
+
 /* MEDIA-QUERY */
 
 @media (max-width:1160px) {
