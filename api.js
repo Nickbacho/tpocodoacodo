@@ -21,26 +21,48 @@
 // }
 
 
-  function redirectToTranslate() {
-    var apiKey = 'TU_CLAVE_DE_API'; // Reemplaza 'TU_CLAVE_DE_API' con tu propia clave de API
-    var targetUrl = 'https://translate.google.com/#auto/es/';
-    
-    var textToTranslate = prompt('Ingrese el texto a traducir:');
-    if (textToTranslate) {
-      var encodedText = encodeURIComponent(textToTranslate);
-      var translateUrl = 'https://translation.googleapis.com/language/translate/v2?key=' + apiKey + '&q=' + encodedText + '&target=es';
+//  function redirectToTranslate() {
+//   var apiKey = 'TU_CLAVE_DE_API'; // Reemplaza 'TU_CLAVE_DE_API' con tu propia clave de API
+//    var targetUrl = 'https://translate.google.com/#auto/es/';    
+//    var textToTranslate = prompt('Ingrese el texto a traducir:');
+//if (textToTranslate) {
+//  var encodedText = encodeURIComponent(textToTranslate);
+//  var translateUrl = 'https://translation.googleapis.com/language/translate/v2?key=' + apiKey + '&q=' + encodedText + '&target=es';
+//
+//  fetch(translateUrl)
+//    .then(response => response.json())
+//    .then(data => {
+//      var translatedText = data.data.translations[0].translatedText;
+//      targetUrl += encodeURIComponent(translatedText);
+//
+//              window.open(targetUrl, '_blank');
+//     })
+//           .catch(error => {
+//             console.error('Error al traducir el texto:', error);
+//           });
+//         }
+//                }
 
-      fetch(translateUrl)
-        .then(response => response.json())
-        .then(data => {
-          var translatedText = data.data.translations[0].translatedText;
-          targetUrl += encodeURIComponent(translatedText);
+function redirectToTranslate() {
+  var apiKey = 'TU_CLAVE_DE_API'; // Reemplaza 'TU_CLAVE_DE_API' con tu propia clave de API
+  var targetUrl = 'https://translate.google.com/#auto/es/';
 
-          window.open(targetUrl, '_blank');
-        })
-        .catch(error => {
-          console.error('Error al traducir el texto:', error);
-        });
-    }
+  var textToTranslate = prompt('Ingrese el texto a traducir:');
+  if (textToTranslate) {
+    var encodedText = encodeURIComponent(textToTranslate);
+    var translateUrl = 'https://translation.googleapis.com/language/translate/v2?key=' + apiKey + '&q=' + encodedText + '&target=es';
+
+    fetch(translateUrl)
+      .then((response) => response.json())
+      .then(data => {
+        var translatedText = data.translations;
+        targetUrl += encodedText;
+
+        window.open(targetUrl, '_blank');
+      })
+      .catch(error => {
+        console.error('Error al traducir el texto:', error);
+      });
   }
+}
 
